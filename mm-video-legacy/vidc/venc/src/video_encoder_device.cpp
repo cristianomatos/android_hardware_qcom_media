@@ -2166,7 +2166,7 @@ bool venc_dev::venc_set_intra_period(OMX_U32 nPFrames, OMX_U32 nBFrames)
 bool venc_dev::venc_set_entropy_config(OMX_BOOL enable, OMX_U32 i_cabac_level)
 {
   venc_ioctl_msg ioctl_msg = {NULL,NULL};
-  struct venc_entropycfg entropy_cfg;
+  struct entropy_cfg;
 
   memset(&entropy_cfg,0,sizeof(entropy_cfg));
   DEBUG_PRINT_LOW("\n venc_set_entropy_config: CABAC = %u level: %u", enable, i_cabac_level);
